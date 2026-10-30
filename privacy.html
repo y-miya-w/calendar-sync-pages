@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プライバシーポリシー - calendar-sync</title>
+  <meta name="description" content="calendar-sync が Google アカウントから取得する情報と、その利用目的・保存・削除の方法">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="./"><img src="icon.svg" alt="">calendar-sync</a>
+    <nav class="site-nav" aria-label="ページ">
+      <a href="./">ホーム</a>
+      <a href="privacy.html" aria-current="page">プライバシーポリシー</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <h1>プライバシーポリシー</h1>
+    <p class="updated">最終更新日: 2026 年 10 月 30 日</p>
+    <p class="lead">calendar-sync（以下「本ツール」）が Google アカウントから取得する情報と、その扱いについて定めます。</p>
+
+    <section>
+      <h2>本ツールの性質</h2>
+      <p>本ツールは、開発者本人が自分の管理する複数の Google アカウントのカレンダーを同期するために作成した個人用のプログラムです。利用者自身の機器で動作し、開発者や第三者が運営するサーバーを介しません。</p>
+    </section>
+
+    <section>
+      <h2>取得する情報</h2>
+      <p>利用者が Google の同意画面で許可した各アカウントについて、Google API を通じて次の情報を取得します。</p>
+      <ul>
+        <li>アカウントのメールアドレス（同意したアカウントが設定どおりのものであるかの確認に使います）</li>
+        <li>カレンダーの予定の識別子、開始・終了の日時、繰り返しの設定、状態（確定・削除・空き時間扱いなど）、自分の出欠の回答、更新日時</li>
+        <li>予定の件名、場所、説明、参加者などは Google API の応答に含まれますが、本ツールはこれらを保存せず、他のアカウントへも写しません</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>利用目的</h2>
+      <p>取得した情報は、同期対象のアカウントの間で予定の有無を揃えるためだけに使います。具体的には、あるアカウントの予定と同じ日時に、他のアカウントのカレンダーへタイトル「予定あり」の予定を作成・更新・削除します。広告、分析、プロファイリング、人工知能モデルの学習などには使いません。</p>
+    </section>
+
+    <section>
+      <h2>保存と保護</h2>
+      <ul>
+        <li>Google から受け取ったアクセストークンと更新トークン、および元の予定と複製した予定の対応表（予定の識別子と更新日時）を、利用者自身の機器の、所有者以外が読めない領域に保存します</li>
+        <li>予定の内容（件名、場所、説明、参加者）は保存しません</li>
+        <li>Google のサーバー以外へデータを送信しません</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>第三者への提供</h2>
+      <p>取得した情報を第三者へ販売、提供、共有することはありません。</p>
+    </section>
+
+    <section>
+      <h2>Google API サービスのユーザーデータに関するポリシーへの準拠</h2>
+      <p>本ツールによる Google API から受け取った情報の利用、および他のアプリへの転送は、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API サービスのユーザーデータに関するポリシー</a>（限定的な使用の要件を含む）に従います。</p>
+      <p lang="en">calendar-sync's use and transfer to any other app of information received from Google APIs will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    </section>
+
+    <section>
+      <h2>データの削除とアクセスの取り消し</h2>
+      <ul>
+        <li>Google アカウントの<a href="https://myaccount.google.com/permissions">「サードパーティ製のアプリとサービス」</a>から本ツールのアクセスを取り消すと、本ツールはそのアカウントへアクセスできなくなります</li>
+        <li>機器に保存したトークンと対応表は、利用者がファイルを削除することでいつでも消去できます</li>
+        <li>本ツールが作成した「予定あり」の予定は、Google カレンダー上で削除できます</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>ポリシーの変更</h2>
+      <p>本ポリシーを変更する場合は、このページで公開し、最終更新日を更新します。</p>
+    </section>
+
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>本ポリシーに関する問い合わせは、Google の同意画面に表示されるサポート用メールアドレスまでお願いします。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>calendar-sync は個人用の非商用ツールです。Google および Google カレンダーは Google LLC の商標です。</p>
+  </footer>
+</body>
+</html>

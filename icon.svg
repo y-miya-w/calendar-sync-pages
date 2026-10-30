@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="72" fill="#2f5d50"/>
+  <!-- 2 枚のカレンダーが重なり、予定が行き来する様子を紙色の線画で描く -->
+  <g fill="none" stroke="#faf9f7" stroke-width="20" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="104" y="136" width="208" height="200" rx="16"/>
+    <path d="M104 196h208M152 112v48M264 112v48"/>
+    <rect x="200" y="216" width="208" height="200" rx="16"/>
+    <path d="M200 276h208M248 192v48M360 192v48"/>
+    <path d="M152 300h40M248 364h40M296 364h40"/>
+  </g>
+</svg>

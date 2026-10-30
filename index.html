@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>calendar-sync</title>
+  <meta name="description" content="複数の Google アカウントのカレンダーを相互に「予定あり」で同期する個人用ツール calendar-sync の案内ページ">
+  <!-- GitHub Pages のユーザーサイト直下でもプロジェクトサイト配下でも動くよう、パスは相対で書く -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="./"><img src="icon.svg" alt="">calendar-sync</a>
+    <nav class="site-nav" aria-label="ページ">
+      <a href="./" aria-current="page">ホーム</a>
+      <a href="privacy.html">プライバシーポリシー</a>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <h1>calendar-sync</h1>
+    <p class="lead">複数の Google アカウントのカレンダーを、相互に「予定あり」で同期する個人用のツールです。</p>
+
+    <section>
+      <h2>何をするものか</h2>
+      <p>個人の Google アカウントと、仕事で使う Google Workspace のアカウントなど、1 人が複数の Google カレンダーを使い分けていると、片方に入れた予定がもう片方では空き時間に見えてしまいます。calendar-sync は、同期対象として登録したアカウントのどれかに予定が追加・変更・削除されたとき、他のアカウントのカレンダーへタイトル「予定あり」だけの予定を作成・更新・削除します。</p>
+      <p>複製する予定には開始・終了の日時と繰り返しの設定だけを写し、元の予定の件名・場所・説明・参加者は写しません。</p>
+    </section>
+
+    <section>
+      <h2>誰が使うものか</h2>
+      <p>開発者本人が、自分の管理する複数の Google アカウントの間で使うために作ったものです。一般向けの公開サービスではなく、第三者のアカウントやデータを扱いません。プログラムは利用者自身の機器で動作し、Google のサーバー以外へデータを送信しません。</p>
+    </section>
+
+    <section>
+      <h2>Google アカウントへのアクセス</h2>
+      <p>Google の OAuth 2.0 を使い、利用者が同意した各アカウントのカレンダーの予定を読み書きします。要求する権限は、予定の読み書き（calendar.events）と、同意したアカウントのメールアドレスの確認（userinfo.email）だけです。アクセスは Google アカウントの<a href="https://myaccount.google.com/permissions">「サードパーティ製のアプリとサービス」</a>からいつでも取り消せます。データの扱いの詳細は<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
+    </section>
+
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>このツールについての問い合わせは、Google の同意画面に表示されるサポート用メールアドレスまでお願いします。</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>calendar-sync は個人用の非商用ツールです。Google および Google カレンダーは Google LLC の商標です。</p>
+  </footer>
+</body>
+</html>
